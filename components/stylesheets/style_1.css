@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -112,6 +113,8 @@ li > a:hover{
     margin-left: 0px;
     gap: 18px;
     height: 250px;
+    justify-content: space-around;
+    
 }
 
 .innovation h2{
@@ -139,24 +142,11 @@ li > a:hover{
 .innovation #two{
     display: flex;
     margin-left: 900px;
-    margin-top: -290px;
-    scale: 1.2;
+    margin-top: -30%;
+    height: 350px;
+    width: 400px;
 }
 
-
-
-
-
-/* @media (min-width: 320px) and (max-width: 767px){
-    .main{
-        color: red;
-    }
-    .info{
-        color: blue;
-        background-color: aqua;
-    }
-} 
-@media (min-width: 768px) and (max-width: 1024px){}  */
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -188,7 +178,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.3); 
     
 }
 
@@ -197,7 +187,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background-color: #E1BEE7;
     margin: auto;
     padding: 0;
-    border: 5px solid #7B1FA2;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -233,11 +222,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .modal-header, .modal-footer {
     padding: 2px 16px;
-    background-color: #a059ad;
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 70%;
+    height: fit-content;
+}
+
+.modal_body input{
+    display: flex;
+    
+}
+
 
 
 /* Здесь заканчивается модальное окно */
@@ -247,7 +250,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .EVA{
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    font-size: 45px;
+    font-weight: 100;
 }
 .EVA span{
     background-image: linear-gradient(90.14deg, #D4145A 3.35%, #3D5BF5 91.43%);
@@ -267,8 +272,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .galery{
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     margin-bottom: 50px;
 }
 div img{
@@ -292,9 +297,9 @@ div .cont{
     border-radius: 5px;
     background-color: #f2edf3;
     max-width: 350px;
-    height: 400px;
-    margin-bottom: 50px;
+    height: 360px;
     margin: 20px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -319,6 +324,9 @@ div .cont{
 .desc p{
     text-align: left;
     margin-left: 20px;
+    font-weight: 100;
+    font-size: 12px;
+    width: 70%;
 }
 
 .reviews{
@@ -329,14 +337,15 @@ div .cont{
     background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
 }
 .review {
-    
     background: #ffffff;
     border-radius: 3px;
+    max-height: 220px;
+    width: 30%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .review p{
     text-align: center;
-    margin: 20px;
+    font-size: 12px;
 }
 .review h5{
     text-align: center;
@@ -344,21 +353,17 @@ div .cont{
     color: #6f6e6e;
 }
 .review  img{
-    display: inline-flex;
-    width: 30%;
-    height: 30%;
-    margin-left: 35%;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 12%;
+    margin-top: -15%;
 }
 
-.review hr{
-    align-self: center;
+.review svg{
     width: 100px;
-    margin: 0 35% 0 35%;
-    display: inline-flex;
+    margin-left: 36%;
 }
-.review span hr{
 
-}
 #rew_one{
     opacity: 0.6;
     
@@ -404,6 +409,44 @@ footer  svg:hover{
     transform: scale(1.1);
 }
 
+.final{
+    display: flex;
+    margin-left: 48%;
+}
+.final h3{
+    margin-left: -100%;
+    cursor: help;
+}
+.final button{
+    cursor: alias;
+    background: linear-gradient(90.14deg, #D4145A 3.35%, #3D5BF5 91.43%);
+    border-radius: 30px;
+}
+.final button a{
+    text-decoration: none;
+    color: #d6caca;
+} 
 
+ 
+ @media  (min-width: 768px) and (max-width: 1024px){
+    header{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .galery{
+        display: block;
+
+        
+    }
+    .reviews{
+        display: block;
+        
+        
+    }
+} 
+
+@media (max-) {
     
+} 
 
